@@ -1,0 +1,11 @@
+{
+    "triggerTaskOnSave.selectedTask": "build.hxml",
+    "triggerTaskOnSave.tasks": {
+        "build":[
+            "**/*.hx",
+            "**/*.hxml",
+            "**/*.js"
+        ]
+        
+    }
+}
