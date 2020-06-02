@@ -1,23 +1,28 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- *Recommended WebRTC Shim -->
-    <script src="https://webrtchacks.github.io/adapter/adapter-latest.js"></script>
-  </head>
-  <body>
-    <!-- video containers -->
-    <!-- publisher -->
-    <div>
-      <video id="red5pro-publisher" width="640" height="480" muted autoplay></video>
-    </div>
-    <!-- subscriber -->
-    <div>
-      <video id="red5pro-subscriber" width="640" height="480" controls autoplay></video>
-    </div>
-    <!-- Red5 Pro SDK -->
-    <script src="lib/red5pro/red5pro-sdk.min.js"></script>
-    <!-- Create Pub/Sub -->
-    <!-- <script>
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- *Recommended WebRTC Shim -->
+  <script src="https://webrtchacks.github.io/adapter/adapter-latest.js"></script>
+</head>
+
+<body>
+  <!-- video containers -->
+  <!-- publisher -->
+  <div>
+    <video id="red5pro-publisher" width="640" height="480" muted autoplay></video>
+  </div>
+  <!-- subscriber -->
+  <div>
+    <video id="red5pro-subscriber" width="640" height="480" controls autoplay></video>
+  </div>
+  <!-- Red5 Pro SDK -->
+  <script src="lib/red5pro/red5pro-sdk.min.js"></script>
+  <!-- Create Pub/Sub -->
+  <!-- <script>
       (function(red5prosdk) {
         'use strict';
 
@@ -64,6 +69,7 @@
 
       }(window.red5prosdk));
     </script> -->
-    <script src="js/app.js"></script>
-  </body>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

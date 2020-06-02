@@ -1,12 +1,13 @@
 package red5.rtc;
 
+import red5.base.IPublisher;
 import red5.rtc.RTCConfigurationProperties.Publisher;
 import haxe.extern.EitherType;
 import js.html.rtc.PeerConnection;
 import js.html.MediaStream;
 import js.lib.Promise;
 import red5.event.EventEmitter;
-@:native("window.red5prosdk.RTCPublisher") extern class RTCPublisher extends EventEmitter{
+@:native("window.red5prosdk.RTCPublisher") extern class RTCPublisher extends EventEmitter implements IPublisher{
 
     public function new():Void;
     public function init(options:Publisher):Promise<EitherType<Void,Dynamic> >;

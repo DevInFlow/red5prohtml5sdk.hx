@@ -16,9 +16,9 @@ Test.prototype = {
 			_gthis.rtcPublisher.on("Publish.Start",$bind(_gthis,_gthis.subscribe));
 			return _gthis.rtcPublisher.publish();
 		}).then(function(data) {
-			console.log("src/Test.hx:46:","Publishing!");
+			console.log("src/Test.hx:44:","Publishing!");
 		}).catch(function(err) {
-			console.log("src/Test.hx:48:","Could not publish: " + JSON.stringify(err));
+			console.log("src/Test.hx:46:","Could not publish: " + JSON.stringify(err));
 		});
 	}
 	,subscribe: function() {
@@ -26,9 +26,9 @@ Test.prototype = {
 		this.rtcSubscriber.init(this.config).then(function(data) {
 			return _gthis.rtcSubscriber.subscribe();
 		}).then(function(data) {
-			console.log("src/Test.hx:57:","Playing!");
+			console.log("src/Test.hx:55:","Playing!");
 		}).catch(function(err) {
-			console.log("src/Test.hx:59:","Could not play: " + err);
+			console.log("src/Test.hx:57:","Could not play: " + err);
 		});
 	}
 };

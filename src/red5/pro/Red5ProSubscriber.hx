@@ -1,9 +1,10 @@
 package red5.pro;
 
+import red5.base.ISubscriber;
 import red5.event.EventEmitter;
 import js.lib.Promise;
 
-@:native("window.red5prosdk.Red5ProSubscriber") extern class Red5ProSubscriber extends EventEmitter{
+@:native("window.red5prosdk.Red5ProSubscriber") extern class Red5ProSubscriber extends EventEmitter implements ISubscriber{
     public function new():Void;
     public var playbackTypes:Dynamic;
     public function getPlaybackOrder():Array<String>;

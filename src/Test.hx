@@ -1,12 +1,10 @@
 package;
 
-import js.lib.Promise;
+import red5.Globals.PublisherEventTypes;
 import haxe.Json;
-import js.Browser;
-import red5.event.PublisherEventTypes;
+
 import red5.rtc.RTCSubscriber;
 import red5.rtc.RTCPublisher;
-
 class Test {
 	public static function main()
 		new Test();
@@ -49,7 +47,7 @@ class Test {
 		});
 	}
 
-	
+
 	public function subscribe():Void {
 		rtcSubscriber.init(config).then((data) -> {
 			return rtcSubscriber.subscribe();
