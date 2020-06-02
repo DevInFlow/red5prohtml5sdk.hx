@@ -1,5 +1,7 @@
 package red5.pro;
 
+import red5.event.EventEmitter;
+
 @:native("window.red5prosdk.Red5ProSharedObject") extern class Red5ProSharedObject extends EventEmitter {
     public function close():Void;
     public function getName():String;
